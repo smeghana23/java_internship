@@ -1,0 +1,44 @@
+Employee CRUD Operations:
+1.Create a bean Employee in com.pace.emp.crud.bean package
+2.Create a Data Access Object (DAO) class EmployeeCrud in com.pace.emp.crud.dao pckage
+3.Create a class MainEmpCrud in com.pace.emp.crud.main package that has psvm()
+
+
+crt+shift+o for importing packages
+alt+shift+s+r for getters and setters
+alt+shift+s+o for creating constructor
+
+
+debugging : to know the flow of the statements execution while running the code also values of variables are seen if they are updated
+steps to debug the code
+1. select the line number where from u want to debug
+2. right click on the line number and click on toggle break point
+3. click on run and debug as java application
+
+Employee application using HashSet
+
+
+Pure Object Oriented Language or Complete Object Oriented Language are Fully Object Oriented Language that supports or have features that treats everything inside the program as objects. It doesn’t support primitive datatype(like int, char, float, bool, etc.).
+
+java archide - jre
+JDBC drivers convert JDBC API calls into database API calls
+
+
+
+
+
+
+
+Layered Architecture
+1. Bean/Entity Layer - Contains Java beans
+2. Data Access Objects - contains classes that performs
+			- CRUD operations on database
+3. Helper Layer - Contains class that connects to database doesn't require bean
+4. Service layer - Receives requests from UI and sends to DAO and vice versa - business logics are implemented. Which will have business logic
+5. Presentation layer - All User Interface operations which will have data input and data display.
+
+presentation <-> service <-> DAO <-> DB server
+			     | |
+		           Helper - create and close connection both the connections are static
+
+Beans are used in presentation, DAO and service layer
